@@ -116,6 +116,29 @@ footer {
   letter-spacing:3px;
   font-size:11px;
 }
+body::before,
+body::after {
+  position: fixed;
+  top: 30%;
+  z-index: 0;
+  pointer-events: none;
+  color: #c9a66b;
+  opacity: 0.45;
+  font-size: 25px;
+  line-height: 2.5;
+  white-space: pre;
+  text-align: center;
+}
+
+body::before {
+  content: "✧\A ☾\A ✧\A ♧";
+  left: 7px;
+}
+
+body::after {
+  content: "✧\A ♧\A ✧\A ☾";
+  right: 7px;
+}
 </style>
 </head>
 <body>
